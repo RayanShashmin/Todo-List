@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #ced4da; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+  text-align: center;
+  color: #28a745;
+}
+
+.top {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 400px;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ced4da;
+}
+
+.filters, .counts {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.filters .btn {
+  margin: 0 0.5rem;
+}
+
+.todo {
+  position: relative;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo.completed .text {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.text {
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  color: #212529;
+  
+  font-size: large;
+}
+
+.timestamp {
+  display: block;
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#update {
+  color: #28a745;
+}
+
+#delete {
+  color: #dc3545;
+}
+
+i {
+  cursor: pointer;
+}
